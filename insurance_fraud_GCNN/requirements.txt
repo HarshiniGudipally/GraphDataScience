@@ -1,0 +1,18 @@
+requirements for the fraud detection project using Graph Neural Networks, here's the command to install all the necessary packages:
+text
+pip install torch torchvision torchaudio pandas matplotlib scikit-learn torch-geometric torch-scatter torch-sparse torch-cluster torch-spline-conv
+
+This command will install:
+PyTorch and its related packages (torch, torchvision, torchaudio)
+Pandas for data manipulation
+Matplotlib for plotting (if needed)
+Scikit-learn for preprocessing and model evaluation
+PyTorch Geometric and its dependencies (torch-geometric, torch-scatter, torch-sparse, torch-cluster, torch-spline-conv)
+Please note that the specific versions of torch-geometric and its dependencies should match your PyTorch version and CUDA version (if you're using GPU). The command above doesn't specify versions, so it will install the latest compatible versions.
+If you need specific versions or have a particular CUDA version, you might need to modify the command. For example, if you're using PyTorch 1.10.0 with CUDA 11.3, you could use:
+text
+pip install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+pip install torch-geometric torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-1.10.0+cu113.html
+pip install pandas matplotlib scikit-learn
+
+After running these commands, all required packages for the fraud detection project should be installed and ready to use.
